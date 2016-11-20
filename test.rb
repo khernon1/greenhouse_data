@@ -1,10 +1,17 @@
 require 'byebug'
-def reading
-  File.readlines('data/zipcode_region_ranges.txt').map do |content|    
-    content.split(/\r/).map do |line|
-      byebug
+  def get_gold_levels
+    sql = <<-SQL
+      SELECT DISTINCT registrations.registrant_id
+        FROM registrations
+        JOIN profiles
+        ON registrations.registrant_id = profiles.registrant_id
+        WHERE registrations.registration_date  >= date('now', '-4 months')
+        AND UPPER(profiles.dominant_color) = UPPER('gold') 
+    SQL
+    run = ActiveRecord::Base.connection.execute(sql)
+    run.each do |id|
+      print id
     end
   end
-end
 
-reading
+get_gold_levels
