@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  package: MyString
+  registration_date: 2016-11-19
+  registrant_id: 1
+
+two:
+  package: MyString
+  registration_date: 2016-11-19
+  registrant_id: 1

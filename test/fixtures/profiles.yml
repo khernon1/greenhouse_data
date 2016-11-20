@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  registrant_id: 1
+  name: MyString
+  gender: MyString
+  breed: MyString
+  dob: 2016-11-19
+  dominant_color: MyString
+  secondary_color: MyString
+  zip_code: MyString
+
+two:
+  registrant_id: 1
+  name: MyString
+  gender: MyString
+  breed: MyString
+  dob: 2016-11-19
+  dominant_color: MyString
+  secondary_color: MyString
+  zip_code: MyString

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  region: MyString
+  min_zip_code: 1
+  max_zip_code: 1
+
+two:
+  region: MyString
+  min_zip_code: 1
+  max_zip_code: 1
